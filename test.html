@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="main.js"></script>
+    <style>
+        .content{
+            position: relative;
+            display: inline-block;
+        }
+        .tip{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 24px;
+            display: none;
+        }
+        .tip a{
+            display: block;
+            color: #fff;
+            cursor: default;
+        }
+        .content:hover .tip{
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="circle" width="600" height="300" style="border: 1px dashed #ccc"></canvas>
+    <canvas id="p1" width="300" height="300"></canvas>
+    <canvas id="clock" width="300" height="300"></canvas>
+    <div class="content">
+        <canvas id="snake" width="300" height="300"></canvas>
+        <div class="tip">
+            <a>点击暂停或者运行</a>
+        </div>
+    </div>
+
+</body>
+
+</html>
